@@ -13,14 +13,13 @@
     font-family: 'Poppins', sans-serif;
 }
 /* navbar start */
-<<<<<<< HEAD
+
 
 body{
  text-decoration: none;
-=======
+}
 body {
     background-color: #f9f9f9;
->>>>>>> 9a97b7560499acdde5a078de26412b40c1c793d2
 }
 nav {
     display: flex;
@@ -117,24 +116,7 @@ section{
     align-items: center;
     margin-right: 130px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-.contatos {
-    background-color: blueviolet;
-    width: 300px;
-    height: 800px;
-}
-=======
-.feed{
-    background-color: aqua;
-    width: 500px;
-    height: 1000px;
-}
->>>>>>> 6da9e9462af63854893a006ac0cf2e7f8aa64a46
-
->>>>>>> 9a97b7560499acdde5a078de26412b40c1c793d2
 .menu{
     width: 300px;
     border-top: 1px solid var(--bg-button-light-grey);
@@ -156,25 +138,13 @@ section{
     background-color: var(--bg-button-light-grey);
     border-radius: var(--border-radius);
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
->>>>>>> 6da9e9462af63854893a006ac0cf2e7f8aa64a46
 .feed{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color:#FFFFFF;
-<<<<<<< HEAD
 }
-=======
-    
-   
-}
-
->>>>>>> 6da9e9462af63854893a006ac0cf2e7f8aa64a46
 .story {
     display: flex;
     overflow-x: scroll;
@@ -463,7 +433,6 @@ section{
 .newYork{
   margin: 16px;
 }
-<<<<<<< HEAD
 .contatos{
     display: grid;
     width: 340px;
@@ -482,9 +451,6 @@ section{
     background-color: var(--bg-white);
 }
 
-=======
-=======
->>>>>>> 6da9e9462af63854893a006ac0cf2e7f8aa64a46
 .contatos{
     display: grid;
     width: 340px;
@@ -611,4 +577,3 @@ section{
         display: none;
     }
  }
->>>>>>> 9a97b7560499acdde5a078de26412b40c1c793d2
