@@ -6,6 +6,7 @@
     --bg-button-light-grey: #E0E0E0;
     --bg-button-darker-grey: #474747;
     --bg-white: #FFFFFF;
+    --bg-very-lightlgrey: #f9f9f9;
     --border-radius: 4px;
     --icon-width: 48px;
     --icon-height: 48px;
@@ -13,29 +14,28 @@
     font-family: 'Poppins', sans-serif;
 }
 /* navbar start */
-
-
-body{
- text-decoration: none;
+*{
+    scroll-behavior: smooth;
 }
 body {
-    background-color: #f9f9f9;
+    background-color: var(--bg-very-lightlgrey);
 }
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 48px;
     box-shadow: 0px 5px 5px var(--bg-button-light-grey);
     padding: 5px;
     background-color: var(--bg-white);
 }
-.logonav{
-    margin-top: 5px;
-    margin-left: -50px;
+
+.logonav2{
+    display: none;
 }
-.search-container{
+/* .search-container{
     margin-right: -40px;
-}
+} */
 .search-container input{
     height: 42px;
     width: 236px;
@@ -48,7 +48,11 @@ nav {
     background-color: var(--bg-button-dark-grey);
     border-radius: var(--border-radius);
     border: none;
-    color: #fff;
+    color: var(--bg-white);
+    transition: .5s;
+}
+.search-container button:hover {
+    background-color: var(--bg-button-darker-grey);
 }
 .icons{
     display: flex;
@@ -69,6 +73,10 @@ nav {
     border-radius: var(--border-radius);
     overflow: hidden;
     margin-right: 5px;
+    transition: .5s;
+}
+.navicon:hover{
+    background-color: var(--bg-button-dark-grey);
 }
 .navicon img{
     width: 20px;
@@ -82,10 +90,14 @@ section{
     margin: 30px;
 }
 .personal{
-    width: 400px;
-    height: 775px;
+    width: 325px;
+    height: 710px;
     text-align: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
     border: 1px solid var(--bg-button-light-grey);
     border-radius: var(--border-radius);
     background-color: var(--bg-white);
@@ -93,22 +105,18 @@ section{
 .personal h1{
     font-weight: bolder;
     font-size: 30px;
-    margin-top: -60px;
 }
 .personal p{
     font-weight: 350;
-    margin-top: -90px;
 }
 .personal span{
     font-weight: 200;
-    margin-top: -135px;
 }
 
 .personal_data{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -185px;
 
 }
 .followers{
@@ -120,11 +128,11 @@ section{
 .menu{
     width: 300px;
     border-top: 1px solid var(--bg-button-light-grey);
-    margin-top: -100px;
-    margin-left: 35px;
     padding: var(--padding);
     text-align: left;
-    height: 150px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
 }
 .menu-item{
     width: 300px;
@@ -132,7 +140,11 @@ section{
     display: flex;
     margin: auto;
     font-weight: bold;
-    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    cursor: pointer;
+
 }
 .menu-item:hover{
     background-color: var(--bg-button-light-grey);
@@ -143,44 +155,44 @@ section{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color:#FFFFFF;
+    background-color:var(--bg-white);
 }
 .story {
     display: flex;
     overflow-x: scroll;
-    box-sizing: border-box;
     justify-content: space-between;
     width: 516px;
     height: 172px;
     gap: 8px;
     overflow-y: hidden;
-
-    
+    background-color: var(--bg-white);
 }
 
 ::-webkit-scrollbar{
-    background-color: #E0E0E0;
+    background-color: var(--bg-button-light-grey);
     border-radius: 6px;
     height: 8px;
 
 }
 
 ::-webkit-scrollbar-thumb{ 
-    background-color: #ADADADAD;
+    background-color: var(--bg-button-dark-grey);
     border-radius: 6px;
     height: 8px;
 } 
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--bg-button-darker-grey);
+}
 
 .texto {
     display: flex;
     margin: 10px;
-    box-sizing: border-box;
     border: 1px solid var(--bg-button-light-grey);
     width: 502px;
     height: 175px;
-    align-self: baseline;
     flex-direction: column;
     border-radius: var(--border-radius);
+    background-color: var(--bg-white);
 }
 
 .texto div a {
@@ -255,8 +267,8 @@ section{
     margin-bottom: 10px;
 }
 #img{
-    width: 42px;
-    height: 42px;
+    width: 45px;
+    height: 45px;
     border-radius: 4px;
     padding: 10px;
 }
@@ -265,7 +277,7 @@ section{
     display: flex;
     align-items: center;
     max-width: 480px;
-    border-top: 1px solid #E0E0E0;
+    border-top: 1px solid var(--bg-button-light-grey);
     margin-left: 10px;
 }
 
@@ -280,7 +292,7 @@ section{
     width: 418px;
     height: 96px;
     border-radius: 4px;
-    border: 1px solid rgba(199, 199, 199, 1);
+    border: 1px solid var(--bg-button-light-grey);
 }
 
 #link{
@@ -292,14 +304,14 @@ section{
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    color: #949494;
+    color: var(--bg-button-dark-grey);
 
 
 
 }
 
 .botao{
-    background: #949494;
+    background: var(--bg-button-dark-grey);
     width: auto;
     height: 27px;
     border-radius: 4px;
@@ -308,11 +320,14 @@ section{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #F9F9F9;
+    color: var(--bg-button-light-grey);
     border: none;
-    margin: 8px;
+    margin: 7px;
     cursor: pointer;
-    
+    transition: .5s;
+}
+.botao:hover{
+    background-color: var(--bg-button-darker-grey);
 }
 
 
@@ -326,9 +341,13 @@ section{
     background: #474747;
     border-radius: 4px;
     border: none;
-    color: #F9F9F9;
+    color: var(--bg-button-light-grey);
     cursor: pointer;
     margin-left: 65px;
+    transition: .5s;
+}
+.send:hover{
+    scale: 1.05;
 }
 .publicacao1 {  
         display: block;
@@ -336,6 +355,7 @@ section{
         border: 1px solid var(--bg-button-light-grey);
         width: 500px;
         border-radius: var(--border-radius);
+        background-color: var(--bg-white);
 }
    
 .publicacao1 h1{
@@ -354,84 +374,19 @@ section{
     color: #000000;
 }
 
-#link2 {
-    display: flex;
-    align-self: flex-end;
-    width: 34px;
-    height: 14px;
-    font-size: 12px;
-    color: #949494;
-}
-
-.paragrafoUm {
-    display: block;
-    padding: 16px;
-}
-
-.ninaSimone{
-    display: flex;
-    align-items: center;
-  
-}
-
-
-.comentario{
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-    
-}
-
 .input{
     box-sizing: border-box;
     align-items: center;
     width: 418px;
     height: 32px;
-    background: #FFFFFF;
-    border: 1px solid #C7C7C7;
+    background:var(--bg-white);
+    border: 1px solid var(--bg-button-light-grey);
     border-radius: 4px;
     width: 418px;
     height: 48px;
     margin-bottom: 12px;
 
 
-}
-
-.publicacao2{
-    display: block;
-    margin: 10px;
-    box-sizing: border-box;
-    border: 1px solid rgba(224, 224, 224, 1);
-    width: 502px;
-    height: 328px;
-    left: 485px;
-    top: 284px;
-    align-self: baseline;
-}
-
-.publicacao2 h1{
-    display: flex;
-    flex-wrap: wrap;
-    width: 125px;
-    height: 23px;
-    
-  
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    
-    display: flex;
-    align-items: flex-end;
-    color: #000000;
-}
-
-.paragrafoDois{
-    display: block;
-    padding: 16px;
-}
-
-.newYork{
-  margin: 16px;
 }
 .contatos{
     display: grid;
@@ -481,7 +436,11 @@ section{
     line-height: 19px;
     border: none;
     font-size: 16px;
-    
+    transition: .5s;
+}
+.button_contatos1:hover{
+    background-color: var(--bg-button-darker-grey);
+    cursor: pointer;
 }
 .cardchar{
     display: flex;
@@ -522,6 +481,11 @@ section{
     align-items: center;
     border-radius: var(--border-radius);
     margin-right: 0;
+    transition: .5s;
+}
+.buttonadd:hover{
+    background-color: var(--bg-button-dark-grey);
+    scale: 1.1;
 }
 .news {
     display: flex;
@@ -563,12 +527,18 @@ section{
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 5px var(--bg-button-light-grey);
+    transition: .5s;
+    cursor:pointer;
+ }
+ .arrow:hover{
+    scale: 1.1;
  }
  @media (max-width:992px){
     .contatos{
         display: none;
     }
  }
+
  @media (max-width:667px){
     .personal{
         display: none;
@@ -576,4 +546,31 @@ section{
     .contatos{
         display: none;
     }
- }
+    .gear{
+        display: none;
+    }
+    .logonav{
+        margin-top: 0;
+        margin-left: 0;
+        display: none;
+    }
+    .logonav2{
+        display: block;
+    }
+    .logonav img{
+        width: 30px;
+    }
+    .search-container {
+        margin-right: 0px;
+    }
+    
+    section{
+        margin: 0;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .feed{
+        width: 80vw;
+        margin-left: 10px;
+    }
+}
