@@ -65,6 +65,8 @@ nav {
     height: var(--icon-height);
     border-radius: 7px;
     overflow: hidden;
+    cursor: pointer;
+    
 }
 .navicon{
     width: var(--icon-width);
@@ -84,6 +86,7 @@ nav {
     margin-left: 14px;
     margin-top: 14px;
 }
+
 section{
     display: flex;
     justify-content:space-between;
@@ -105,6 +108,7 @@ section{
 .personal h1{
     font-weight: bolder;
     font-size: 30px;
+    cursor: pointer;
 }
 .personal p{
     font-weight: 350;
@@ -123,6 +127,7 @@ section{
     width: auto;
     align-items: center;
     margin-right: 130px;
+    cursor: pointer;
 }
 
 .menu{
@@ -245,7 +250,6 @@ section{
 }
 
 .headerPub p {
-    color: var(--bg-button-dark-grey);
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -256,7 +260,6 @@ section{
     display: flex;
     align-items: flex-start;
     margin-top: 9px;
-    color: var(--bg-button-dark-grey);
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -359,6 +362,7 @@ section{
     font-size: 19px;
     align-items: flex-end;
     color: #000000;
+    cursor: pointer;
 }
 
 .input{
@@ -441,6 +445,7 @@ section{
     display: grid;
     margin: auto;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .contatos1 h1{
@@ -459,6 +464,7 @@ section{
     border-radius: var(--border-radius);
     margin-right: 0;
     transition: .5s;
+    cursor: pointer;
 }
 
 .buttonadd:hover{
@@ -497,6 +503,7 @@ section{
 
 .textnews{
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .arrow{
