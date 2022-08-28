@@ -56,7 +56,7 @@ nav {
 }
 .icons{
     display: flex;
-    position: relative;
+    
 }
 
 .bola {
@@ -66,9 +66,8 @@ nav {
     width: 10px;
     border:none;
     background-color: hsl(0, 98%, 50%);
-    position: absolute;
-    margin-left: 616px;
-    margin-bottom:44px;
+    position:absolute;
+    margin-top: 2px;
     cursor: pointer;
 }
 
@@ -90,7 +89,7 @@ nav {
     overflow: hidden;
     margin-right: 5px;
     transition: .5s;
-    
+    position: relative;
 }
 .navicon:hover{
     background-color: var(--bg-button-dark-grey);
