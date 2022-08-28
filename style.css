@@ -56,6 +56,20 @@ nav {
 }
 .icons{
     display: flex;
+    position: relative;
+}
+
+.bola {
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border:none;
+    background-color: hsl(0, 98%, 50%);
+    position: absolute;
+    margin-left: 616px;
+    margin-bottom:44px;
+    cursor: pointer;
 }
 
 .pic{
@@ -76,6 +90,7 @@ nav {
     overflow: hidden;
     margin-right: 5px;
     transition: .5s;
+    
 }
 .navicon:hover{
     background-color: var(--bg-button-dark-grey);
