@@ -105,8 +105,8 @@ section{
     margin: 30px;
 }
 .personal{
-    width: 325px;
-    height: 710px;
+    width: 350px;
+    height: 750px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -124,9 +124,11 @@ section{
 }
 .personal p{
     font-weight: 350;
+    padding: 10px;
 }
 .personal span{
     font-weight: 200;
+    padding:0 10px 0 10px;
 }
 
 .personal_data{
@@ -401,7 +403,7 @@ section{
     align-items: flex-start;
     border: 1px solid var(--bg-button-light-grey);
     border-radius: var(--border-radius);
-    height: 425px;
+    height: 438px;
     padding: 15px;
     gap: 15px;
     background-color: var(--bg-white);
